@@ -1,0 +1,52 @@
+@use 'variables';
+
+.evento,
+.confirmacao,
+.localizacao {
+    display: flex;
+    margin: 40px 0;
+    gap: 24px;
+
+    &__imagem {
+        max-width: 340px;
+        width: 100%;
+    }
+
+    &__texto {
+        
+        &__titulo {
+            color: variables.$secondaryTextColor;
+        }
+    
+        &__paragrafo {
+            color: variables.$secondaryTextColor;
+        }
+    }
+
+    &__button {
+        border: 1px solid variables.$secondaryTextColor;
+        border-radius: 10px;
+        color: variables.$secondaryTextColor;
+        padding: 5 25px;
+
+        &:hover {
+            background-color: variables.$corHoverlink;
+            color: variables.$textColor;
+            border: none;
+        }
+    }
+
+    @media (max-width:640px) {
+        display: block;
+
+        &__imagem {
+            width: 100%;
+        }
+    }
+
+}
+
+
+.confirmacao__texto__paragrafo {
+    margin-bottom: 16px;
+}

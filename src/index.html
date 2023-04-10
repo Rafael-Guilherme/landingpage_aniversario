@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/main.scss">
+</head>
+<body>
+    <header class="hero">
+        <ul class="hero__nav">
+            <li class="hero__nav__item">
+                <a href="#evento">Sobre o evento</a>
+            </li>
+            <li class="hero__nav__item">
+                <a href="#confirmacao">Confirmação</a>
+            </li>
+            <li class="hero__nav__item">
+                <a href="#localizacao">Localização</a>
+            </li>
+        </ul>
+        <div class="container">
+            <p class="hero__text">
+                O meu aniversário começa em <br> <span id="contador"></span>
+            </p>
+            <div class="hero__info">
+                <ul class="hero__info__list">
+                    <li class="hero__info__list__item">
+                        <b>Localização:</b>
+                        Minha Rua - Meu Bairro - Rio de Janeiro
+                    </li>
+                    <li class="hero__info__list__item">
+                        <b>Comida:</b>
+                        Traga uma comida típica da sua região
+                    </li>
+                    <li class="hero__info__list__item">
+                        <b>Quando:</b>
+                        29/10/2023 às 18hrs
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="box">
+        <section id="evento" class="evento">
+            <img class="evento__imagem" src="./images/evento.jpg"/>
+            <div class="evento__texto">
+                <h2 class="evento__texto__titulo">Sobre o evento</h2>
+                <p class="evento__texto__paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi adipisci corporis laudantium veritatis libero eligendi, consequatur ducimus nam expedita, ab rerum labore eius fugit! Molestiae cumque eius excepturi minus. Dolores?
+            </p>
+            </div>
+        </section>
+    </div>
+
+    <div class="box">
+        <section id="confirmacao" class="confirmacao">
+            <img class="confirmacao__imagem" src="./images/confirmacao.jpg"/>
+            <div class="confirmacao__texto">
+                <h2 class="confirmacao__texto__titulo">Confirmação</h2>
+                <p class="confirmacao__texto__paragrafo">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a class="confirmacao__button">Vou ao evento!</a>
+            </div>
+        </section>
+    </div>
+
+    <div class="box">
+        <section id="localizacao" class="localizacao">
+            <img class="localizacao__imagem" src="./images/mapa-rj.jpg"/>
+            <div class="localizacao__texto">
+                <h2 class="localizacao__texto__titulo">Localização</h2>
+                <p class="localizacao__texto__paragrafo">
+                Siga o mapa até a festa!
+            </p>
+            </div>
+        </section>
+    </div>
+
+    <script src="./scripts/main.js"></script>
+</body>
+</html>

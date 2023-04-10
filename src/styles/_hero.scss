@@ -1,0 +1,78 @@
+@use 'variables';
+
+.hero {
+    position: relative;
+    padding-top: 64px;
+    padding-bottom: 100px;
+    background-image: url(../images/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__nav {
+        position: absolute;
+        display: flex;
+        top: 16;
+        right: 24px;
+
+        &__item {
+            margin-right: 20px;
+            color: variables.$textColor;
+
+            a {
+                cursor: pointer;
+                text-decoration: none;
+
+                &:hover {
+                    color: variables.$corHoverlink;
+                }
+            }
+        }
+    }
+
+    .container {
+        position: relative;
+    }
+
+    &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: variables.$secondaryTextColor;
+        content: '';
+        opacity: .5;
+    }
+
+    &__text {
+        margin-top: 64px;
+        margin-bottom: 64px;
+        font-size: 40px;
+        line-height: 56px;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__info {
+        text-align: center;
+    }
+
+    @media (max-width: 640px) {
+        padding: 40px 0;
+
+    .hero {
+        &__nav {
+            &__item {
+                margin-right: 5px;
+                color: variables.$textColor;
+            }
+        }
+    }
+
+        &__text {
+            font-size: 22px;
+            line-height: 24px;
+            margin: 24px 0;
+        }
+    }
+}
